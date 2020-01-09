@@ -2,8 +2,8 @@ English | [简体中文](./README.md)
 
 <p align="center"><img width="100" src="https://vuejs.org/images/logo.png"></p>
 
-<h2 align="center">avl-cli（一个简单的前端CLI工具）</h2>
-<p align="center"><b>基于Node搭建生成个人前端脚手架（vue）</b></p>
+<h2 align="center">avl-cli（A simple front-end CLI tool）</h2>
+<p align="center"><b>Generate personal front-end scaffolding based on Node construction（vue）</b></p>
 # 目录
 
 - [feature](#feature )
