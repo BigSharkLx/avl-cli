@@ -1,0 +1,25 @@
+{
+  "name": "avl-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "avl": "bin/avl",
+    "avl-add": "bin/avl-add",
+    "avl-delete": "bin/avl-delete",
+    "avl-list": "bin/avl-list",
+    "avl-init": "bin/avl-init"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.2"
+  }
+}
