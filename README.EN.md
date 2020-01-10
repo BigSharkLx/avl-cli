@@ -44,7 +44,8 @@ avl add
 
 ![avl-add](./img/readme_add.png)
 
-- Note: The template address is the git repository name
+-Note: The template address is the git repository name. The master branch is pulled by default.
+  If you want to specify a branch, please use **owner / name # my-branch**
 ![avl-add](./img/readme_gitAddress.png)
 
 ### Remove template usage

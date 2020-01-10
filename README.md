@@ -45,7 +45,8 @@ avl add
 
 ![avl-add](./img/readme_add.png)
 
-- 注意：模板地址为git仓库名称
+- 注意：模板地址为git仓库名称 默认拉取master分支
+ 如果想指定分支 请使用 **owner/name#my-branch**的方式
 ![avl-add](./img/readme_gitAddress.png)
 
 ### 删除模板用法
