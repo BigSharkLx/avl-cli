@@ -1,1 +1,5 @@
-{"vue-admin":"BigSharkLx/vue-admin"}
+{
+  "vue-admin": "BigSharkLx/vue-admin",
+  "vue-admin-permission": "BigSharkLx/vue-admin#permission-control",
+  "vue-admin-offlineMap": "BigSharkLx/vue-admin#offlineMap"
+}

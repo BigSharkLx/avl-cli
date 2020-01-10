@@ -15,20 +15,6 @@ let projectName = "";
 
 let question = [
   {
-    name: "templateName",
-    type: "input",
-    message: "请输入模板名称",
-    validate(val) {
-      if (val === "") {
-        return "Name is required!";
-      } else if (!tplObj[val]) {
-        return "Template does not exit!";
-      } else {
-        return true;
-      }
-    }
-  },
-  {
     name: "projectName",
     type: "input",
     message: "请输入项目名称",
@@ -39,14 +25,33 @@ let question = [
   }
 ];
 
+const promptList = [
+  {
+    type: "list",
+    message: "请选择一个模板:",
+    name: "templateName",
+    choices: Object.keys(tplObj),
+    validate(val) {
+      if (val === "") {
+        return "请先创建模板";
+      }
+    }
+  }
+];
+
 // 当没有输入参数的时候给个提示
 if (program.args.length < 1) {
-  inquirer.prompt(question).then(answers => {
-    // answers 就是用户输入的内容，是个对象
-    templateName = answers.templateName;
-    projectName = answers.projectName;
-    startProject();
-  });
+  inquirer
+    .prompt(promptList)
+    .then(answers => {
+      templateName = answers.templateName;
+    })
+    .then(() => {
+      inquirer.prompt(question).then(answers => {
+        projectName = answers.projectName;
+        startProject();
+      });
+    });
 } else {
   templateName = program.args[0];
   projectName = program.args[1];
