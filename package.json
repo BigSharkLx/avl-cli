@@ -1,7 +1,12 @@
 {
   "name": "avl-cli",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "个人配置前端脚手架工具",
+  "keywords": [
+    "vue",
+    "avl",
+    "cli"
+  ],
   "main": "index.js",
   "bin": {
     "avl": "bin/avl",
@@ -13,8 +18,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "BIgShark<908130255@qq.com>",
   "license": "ISC",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/BigSharkLx/avl-cli"
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
